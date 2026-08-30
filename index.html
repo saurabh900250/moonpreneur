@@ -516,57 +516,68 @@ button{
   }
 
   .card{
-    flex:0 0 auto;
-    width:91%;
+    flex:1 1 auto;
+    min-height:0;
+    width:92%;
     margin:52px auto 10px;
-    border-radius:20px;
+    border-radius:21px;
     box-shadow:0 18px 42px rgba(26,10,71,.26);
+    display:flex;
+    flex-direction:column;
   }
 
   .card-tabs{
-    height:38px;
+    height:42px;
+    flex:0 0 42px;
   }
 
   .tab{
-    font-size:9.4px;
+    font-size:10px;
     padding:0 5px;
   }
 
   .card-body{
-    padding:10px 10px 9px;
+    flex:1 1 auto;
+    min-height:0;
+    padding:12px 12px 11px;
+    display:flex;
+    flex-direction:column;
   }
 
   .card-title{
-    font-size:10px;
-    margin-bottom:4px;
+    font-size:11px;
+    margin-bottom:5px;
   }
 
   .question{
-    max-width:290px;
-    margin-bottom:8px;
-    font-size:15.5px;
-    line-height:1.08;
+    max-width:310px;
+    margin-bottom:10px;
+    font-size:17px;
+    line-height:1.1;
   }
 
   .options{
-    gap:6px;
+    flex:1 1 auto;
+    display:grid;
+    grid-template-rows:repeat(4,minmax(40px,1fr));
+    gap:8px;
   }
 
   .option{
-    min-height:36px;
-    padding:7px 9px;
-    border-radius:10px;
-    font-size:10.5px;
+    min-height:40px;
+    padding:9px 10px;
+    border-radius:11px;
+    font-size:11px;
     gap:8px;
   }
 
   .option .arrow{
-    font-size:15px;
+    font-size:16px;
   }
 
   .note{
-    margin-top:6px;
-    font-size:7.5px;
+    margin-top:7px;
+    font-size:7.8px;
   }
 
   .stats{
@@ -625,37 +636,40 @@ button{
     width:92%;
     margin-top:43px;
     margin-bottom:6px;
+    flex:1 1 auto;
   }
 
   .card-tabs{
-    height:32px;
+    height:34px;
+    flex-basis:34px;
   }
 
   .tab{
-    font-size:8px;
+    font-size:8.4px;
   }
 
   .card-body{
-    padding:7px 8px 7px;
+    padding:8px 9px 8px;
   }
 
   .card-title{
-    font-size:8px;
+    font-size:8.4px;
   }
 
   .question{
-    font-size:13px;
+    font-size:13.5px;
     margin-bottom:6px;
   }
 
   .options{
-    gap:4px;
+    grid-template-rows:repeat(4,minmax(31px,1fr));
+    gap:5px;
   }
 
   .option{
     min-height:31px;
-    padding:5px 7px;
-    font-size:9px;
+    padding:6px 8px;
+    font-size:9.2px;
     border-radius:9px;
   }
 
